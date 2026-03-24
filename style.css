@@ -1,0 +1,132 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Body */
+body {
+    background: linear-gradient(120deg, #667eea, #764ba2);
+    color: #fff;
+}
+
+/* Navbar */
+header {
+    padding: 20px 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd369;
+}
+
+/* Sections */
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* Glass Effect */
+section, .card, form {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 900px;
+    padding: 30px;
+}
+
+/* Home */
+#home h1 {
+    font-size: 3rem;
+}
+
+#home span {
+    color: #ffd369;
+}
+
+/* Button */
+button {
+    margin-top: 15px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 25px;
+    background: #ffd369;
+    color: #000;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ffb703;
+    transform: scale(1.05);
+}
+
+/* Projects */
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 250px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+
+/* Contact */
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+    }
+}
